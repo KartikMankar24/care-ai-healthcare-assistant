@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 38" height="32" fill="none">
+  <defs>
+    <linearGradient id="careAiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5009B5"/>
+      <stop offset="50%" stop-color="#794CFF"/>
+      <stop offset="100%" stop-color="#01BBBA"/>
+    </linearGradient>
+    <linearGradient id="sparkGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#43B8F3"/>
+      <stop offset="100%" stop-color="#01BBBA"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Modern Healthcare Cross with Pulse Spark -->
+  <g transform="translate(3, 3)">
+    <rect x="0" y="0" width="32" height="32" rx="9" fill="url(#careAiGrad)"/>
+    <!-- Medical Cross with Rounded Curves -->
+    <path d="M16 8v16M8 16h16" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Center AI Pulse Core -->
+    <circle cx="16" cy="16" r="2.2" fill="#43B8F3" filter="url(#glow)"/>
+    <!-- Floating Spark -->
+    <circle cx="23.5" cy="8.5" r="2.5" fill="#43B8F3"/>
+  </g>
+  <!-- Care AI Typography -->
+  <text x="44" y="23" font-family="'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" fill="#1e1035" letter-spacing="-0.4">Care<tspan fill="#794CFF">.AI</tspan></text>
+  <text x="45" y="32" font-family="'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="800" fill="#0D7C8F" letter-spacing="1.4">HEALTHCARE</text>
+</svg>

@@ -1,0 +1,15 @@
+# System & OS
+Thumbs.db
+.DS_Store
+
+# Temporary & Scratch
+scratch/
+deploy_vercel/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
